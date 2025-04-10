@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Magic Memory Master</title>
+</head>
+<body>
+    <div class="menu-screen" id="menuScreen">
+        <h1 class="title">Magic Memory Master</h1>
+        <h2 style="margin-bottom: 20px;">Select a Theme</h2>
+        <div class="theme-selection" id="themeSelection">
+            <div class="theme-card" data-theme="magic">
+                <h3>Magic ✨</h3>
+                <p>🌙 ⭐ ☀️ 🌍 ⚡ 🔮</p>
+            </div>
+            <div class="theme-card" data-theme="animals">
+                <h3>Animals 🦁</h3>
+                <p>🐶 🐱 🐼 🦊 🐨 🦁</p>
+            </div>
+            <div class="theme-card" data-theme="food">
+                <h3>Food 🍕</h3>
+                <p>🍕 🍔 🌮 🍣 🍜 🍪</p>
+            </div>
+        </div>
+        <button class="button" id="startButton" disabled>Start Game</button>
+    </div>
+<div class="game-screen" id="gameScreen">
+    <h1 class="title">Magic Memory Master</h1>
+    <div class="level-info">Level <span id="currentLevel">1</span></div>
+    <div class="stats">
+        <div>Gerakan: <span id="moves">0</span></div>
+        <div>Pasan Ditemukan: <span id="pairs">0</span>/<span id="totalPairs">3</span></div>
+        <div>Waktu: <span id="timer">00:00</span></div>
+    </div>
+    <div class="game-board" id="gameBoard"></div>
+</div>
+ 
+<div class="level-complete" id="levelComplete">
+    <h2>Level Selesai! 🎉</h2>
+    <p style="margin-bottom: 20px;">Kamu menemukan semua pasangan dalam <span id="levelMoves">0</span> gerakan!</p>
+    <button class="button" id="nextLevelBtn">Level Berikutnya</button>
+</div>
+    <script src="game.js"></script>
+</body>
+</html>
